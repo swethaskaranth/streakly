@@ -66,4 +66,7 @@ dependencies {
     implementation(libs.room.ktx)
     implementation(libs.room.paging)
 
+    //Navigation
+    implementation(libs.navigation)
+
 }
