@@ -1,5 +1,6 @@
 package com.kaizencoder.streakly.data.local.entity
 
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.kaizencoder.streakly.domain.model.Priority
@@ -16,4 +17,4 @@ data class TaskEntity(
     val isRecurring: Boolean,
     val reminderRequired: Boolean,
     val priority: Priority,
-    val recurrenceRule: RecurrenceRule)
+    @Embedded val recurrenceRule: RecurrenceRule)
